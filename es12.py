@@ -46,7 +46,7 @@ class BST:
         else:
             return self.__searchRicorsivo(nodo.right, valore)
 
-#conversione Ip
+#creo le funzioni per la conversione degli ip
 
 def ipToInt(ip):
     return int(ipaddress.ip_address(ip))
@@ -58,7 +58,7 @@ def intToIp(n):
 
 blacklist_bst = BST()
 
-# 1000 IP casuali
+# genero1000 IP casuali
 blacklist_ip = [
     '.'.join(str(random.randint(0, 255)) for _ in range(4))
     for _ in range(1000)
@@ -153,6 +153,6 @@ print(f"Tempo BST:   {tempo_bst:.6f} secondi")
 print(f"Tempo Lista: {tempo_lista:.6f} secondi")
 
 if tempo_bst < tempo_lista:
-    print(f"Il BST è circa {tempo_lista / tempo_bst:.2f} volte più veloce")
+    print(f"Il BST è circa {tempo_lista / tempo_bst:.2f} volte più veloce\ng")
 else:
     print(f"La lista è circa {tempo_bst / tempo_lista:.2f} volte più veloce\n")
