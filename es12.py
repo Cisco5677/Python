@@ -153,6 +153,6 @@ print(f"Tempo BST:   {tempo_bst:.6f} secondi")
 print(f"Tempo Lista: {tempo_lista:.6f} secondi")
 
 if tempo_bst < tempo_lista:
-    print(f"Il BST è circa {tempo_lista / tempo_bst:.2f} volte più veloce\ng")
+    print(f"Il BST è circa {tempo_lista / tempo_bst:.2f} volte più veloce\n")
 else:
     print(f"La lista è circa {tempo_bst / tempo_lista:.2f} volte più veloce\n")
